@@ -1,0 +1,335 @@
+/* * {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: gray;
+}
+
+.boxOne {
+  /* width: 400px;
+  height: 100px; */
+/* padding: 20px;
+  background: white;
+  /* margin: 0 auto; */
+/* margin-top: 100px; */
+/* border-radius: 15px;
+} */
+/* 
+.inPPP {
+  outline: none;
+  padding: 10px 20px;
+  width: 300px;
+  border-radius: 10px;
+  border: 2px solid teal;
+  font-size: 20px;
+}
+
+#ewewe {
+  padding: 70px 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  display: inline-block;
+}
+
+#rea {
+  border: 2px solid tomato;
+  border-radius: 8px;
+  color: white;
+  background: tomato;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#qea {
+  border: 2px solid tomato;
+  border-radius: 8px;
+  color: white;
+  background: tomato;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.pppw {
+  text-align: center;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+.iwdnna {
+  text-align: center;
+}
+
+.errrr {
+  width: 300px;
+  margin: 20px auto;
+}
+
+.errrr h3 {
+  background: red;
+  padding: 10px 20px;
+  font-size: 25px;
+  font-weight: 500;
+  border-radius: 10px;
+  text-align: center;
+} */
+
+body {
+  background: gray;
+}
+
+/* BOx One  */
+#boxOne {
+  background: white;
+  text-align: center;
+  width: 700px;
+  height: 400px;
+  margin: 50px auto;
+  border-radius: 15px;
+}
+
+#rea {
+  border: 2px solid tomato;
+  border-radius: 8px;
+  color: white;
+  background: tomato;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+
+.ewewe {
+  padding-top: 120px;
+  font-weight: 600;
+  font-size: 36px;
+}
+/* BOx One  */
+
+/* BOx Two  */
+#boxTne {
+  background: white;
+  text-align: center;
+  width: 700px;
+  height: 400px;
+  margin: 50px auto;
+  border-radius: 15px;
+}
+
+.tEwewe {
+  padding-top: 50px;
+  font-weight: 600;
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+
+#inPPP {
+  outline: none;
+  padding: 15px 20px;
+  width: 350px;
+  border-radius: 10px;
+  border: 2px solid teal;
+  font-size: 20px;
+}
+
+#tRea {
+  border: 2px solid tomato;
+  border-radius: 8px;
+  color: white;
+  background: tomato;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+#erow {
+  font-weight: 600;
+  font-size: 24px;
+  background: red;
+  margin: 0 auto;
+  width: 270px;
+  height: 40px;
+  padding-top: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: white;
+}
+/* BOx Two  */
+
+/* BOx Three  */
+#boxTrre {
+  background: white;
+  text-align: center;
+  width: 700px;
+  height: 400px;
+  margin: 50px auto;
+  border-radius: 15px;
+}
+
+#tUwewe {
+  padding-top: 50px;
+  font-weight: 600;
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+
+#inOPP {
+  outline: none;
+  padding: 15px 20px;
+  width: 350px;
+  border-radius: 10px;
+  border: 2px solid teal;
+  font-size: 20px;
+}
+
+#tOea {
+  border: 2px solid tomato;
+  border-radius: 8px;
+  color: white;
+  background: tomato;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+#erEw {
+  font-weight: 600;
+  font-size: 24px;
+  background: red;
+  margin: 0 auto;
+  width: 270px;
+  height: 40px;
+  padding-top: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: white;
+}
+/* BOx Three  */
+
+/* BOx Four  */
+#boxFne {
+  background: white;
+  text-align: center;
+  width: 700px;
+  height: 400px;
+  margin: 50px auto;
+  border-radius: 15px;
+}
+
+#inFPP {
+  outline: none;
+  padding: 15px 20px;
+  width: 350px;
+  border-radius: 10px;
+  border: 2px solid teal;
+  font-size: 20px;
+}
+
+#tFea {
+  border: 2px solid tomato;
+  border-radius: 8px;
+  color: white;
+  background: tomato;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+#eFow {
+  font-weight: 600;
+  font-size: 24px;
+  background: red;
+  margin: 0 auto;
+  width: 270px;
+  height: 40px;
+  padding-top: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: white;
+}
+/* BOx Four  */
+
+/* BOx Five  */
+#boxVrre {
+  background: white;
+  text-align: center;
+  width: 700px;
+  height: 400px;
+  margin: 50px auto;
+  border-radius: 15px;
+}
+
+#tVwewe {
+  padding-top: 50px;
+  font-weight: 600;
+  font-size: 36px;
+  padding-bottom: 20px;
+}
+
+#inVPP {
+  outline: none;
+  padding: 15px 20px;
+  width: 350px;
+  border-radius: 10px;
+  border: 2px solid teal;
+  font-size: 20px;
+}
+
+#tVea {
+  border: 2px solid tomato;
+  border-radius: 8px;
+  color: white;
+  background: tomato;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+#eVow {
+  font-weight: 600;
+  font-size: 24px;
+  background: red;
+  margin: 0 auto;
+  width: 270px;
+  height: 40px;
+  padding-top: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: white;
+}
+/* BOx Five  */
+
+/* BOx Six  */
+#boxSne {
+  background: white;
+  text-align: center;
+  width: 700px;
+  height: 400px;
+  margin: 50px auto;
+  border-radius: 15px;
+}
+
+#eSewe {
+  padding-top: 120px;
+  font-weight: 600;
+  font-size: 36px;
+}
+
+#rSa {
+  border: 2px solid tomato;
+  border-radius: 8px;
+  color: white;
+  background: tomato;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+/* BOx Six  */
