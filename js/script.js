@@ -39,6 +39,15 @@ tRea.addEventListener("click", () => {
   }
 });
 
+inPPP.addEventListener("keydown", (e) => {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    tRea.click();
+  }
+});
+
+tRea.addEventListener("click", () => {});
+
 // =========================================
 
 let tUwewe = document.getElementById("tUwewe");
@@ -50,15 +59,23 @@ let erEw = document.getElementById("erEw");
 
 tOea.addEventListener("click", () => {
   let inpValue = inOPP.value;
-  if (inpValue == "") {
+  if (inpValue == "" || (inOPP.value < 9 && inOPP.value > 0)) {
     erEw.removeAttribute("hidden");
   } else {
     erEw.setAttribute("hidden", true);
-
     boxTrre.setAttribute("hidden", true);
     boxFne.removeAttribute("hidden");
   }
 });
+
+inOPP.addEventListener("keydown", (e) => {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    tOea.click();
+  }
+});
+
+tOea.addEventListener("click", () => {});
 
 // =========================================
 
@@ -81,6 +98,15 @@ tFea.addEventListener("click", () => {
   }
 });
 
+inFPP.addEventListener("keydown", (e) => {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    tFea.click();
+  }
+});
+
+tFea.addEventListener("click", () => {});
+
 // =========================================
 
 let tVwewe = document.getElementById("tVwewe");
@@ -100,6 +126,15 @@ tVea.addEventListener("click", () => {
     boxSne.removeAttribute("hidden");
   }
 });
+
+inVPP.addEventListener("keydown", (e) => {
+  if (e.keyCode === 13) {
+    e.preventDefault();
+    tVea.click();
+  }
+});
+
+tVea.addEventListener("click", () => {});
 
 // // =========================================
 
