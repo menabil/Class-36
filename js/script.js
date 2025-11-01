@@ -26,8 +26,25 @@ let erow = document.getElementById("erow");
 
 // 2========================================
 
+// inPPP.addEventListener("input", () => {
+//     inPPP.value = inPPP.value.replace(/[^a-zA-Z]/g, "");
+//   });
+
+// user number input korte parbe nah
+
+inPPP.addEventListener("input", () => {
+  let value = inPPP.value;
+  if (/[^a-zA-Z]/.test(value)) {
+    erow.removeAttribute("hidden");
+    // inPPP.value = value.replace(/[^a-zA-Z]/g, "");
+  } else {
+    erow.setAttribute("hidden", true);
+  }
+});
+
 tRea.addEventListener("click", () => {
   let inpValue = inPPP.value;
+
   if (inpValue == "") {
     erow.removeAttribute("hidden");
   } else {
@@ -59,12 +76,33 @@ let erEw = document.getElementById("erEw");
 
 tOea.addEventListener("click", () => {
   let inpValue = inOPP.value;
-  if (inpValue == "" || (inOPP.value < 9 && inOPP.value > 0)) {
+  if (inpValue == "") {
     erEw.removeAttribute("hidden");
+    erEw.innerText = "Please give a number";
   } else {
-    erEw.setAttribute("hidden", true);
-    boxTrre.setAttribute("hidden", true);
-    boxFne.removeAttribute("hidden");
+    let num = Number(inOPP.value);
+    if (num >= 0 && num <= 9) {
+      erEw.setAttribute("hidden", true);
+      boxTrre.setAttribute("hidden", true);
+      boxFne.removeAttribute("hidden");
+    } else {
+      erEw.removeAttribute("hidden");
+      erEw.innerText = "Give a number 0 is out of 9";
+      inOPP.value = "";
+    }
+
+    // if (inOPP.value >= 0 && inOPP.value <= 9) {
+    //   erEw.removeAttribute("hidden");
+    //   erEw.innerText = "Give a number 0 is out of 9";
+    //   inOPP.value = "";
+    //   if (inpValue == "") {
+    //     erEw.innerText = "Please give a number";
+    //   }
+    // } else {
+    //   erEw.setAttribute("hidden", true);
+    //   boxTrre.setAttribute("hidden", true);
+    //   boxFne.removeAttribute("hidden");
+    // }
   }
 });
 
@@ -120,10 +158,20 @@ tVea.addEventListener("click", () => {
   let inpValue = inVPP.value;
   if (inpValue == "") {
     eVow.removeAttribute("hidden");
+    eVow.innerText = "Please give a number";
   } else {
-    eVow.setAttribute("hidden", true);
-    boxVrre.setAttribute("hidden", true);
-    boxSne.removeAttribute("hidden");
+    if (inOPP.value != inVPP.value) {
+      eVow.removeAttribute("hidden");
+      eVow.innerText = "Try Again";
+      inVPP.value = "";
+      if (inpValue == "") {
+        eVow.innerText = "Please give a number";
+      }
+    } else {
+      eVow.setAttribute("hidden", true);
+      boxVrre.setAttribute("hidden", true);
+      boxSne.removeAttribute("hidden");
+    }
   }
 });
 
@@ -146,9 +194,11 @@ let rSa = document.getElementById("rSa");
 tVea.addEventListener("click", () => {
   if (inOPP.value === inVPP.value) {
     eSewe.innerHTML = "Congratulation! <br>" + inFPP.value + " Wins!";
+    inFPP.innerText.color = "green";
     rSa.style.background = "green";
   } else {
     eSewe.innerHTML = "Sorry! <br>" + inPPP.value + " Wins!";
+    inPPP.innerText.color = "red";
     rSa.style.background = "red";
   }
 });
